@@ -106,6 +106,7 @@ def set_brightness(ui, value: int) -> None:
 
 
 def button_clicked(ui, clicked_button, buttons) -> None:
+    redraw_buttons(ui)
     global selected_button
     selected_button = clicked_button
     for button in buttons:
